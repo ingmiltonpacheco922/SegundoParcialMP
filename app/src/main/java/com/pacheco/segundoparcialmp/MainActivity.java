@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void iniciar(View view) {
 
-        Toast loginok = Toast.makeText(this, "LOGIN OK", Toast.LENGTH_SHORT);
-        loginok.show();
+        Toast toastlogin = Toast.makeText(this, "LOGIN OK", Toast.LENGTH_SHORT);
+        toastlogin.show();
         Intent intent = new Intent(this, Formulario.class);
         startActivity(intent);
     }
