@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">SegundoParcialMP</string>
+    <string name="titulo_contenido">Which of these composers do you enjoy?</string>
+    <string name="subtitulo_contenido">select at least 3.</string>
+    <string name="jean_cantante">primero en la lista de cantantes</string>
+    <string name="leos_cantante">segundo en la lista de cantantes</string>
+    <string name="anna_cantante">tercero en la lista de cantantes</string>
+    <string name="fred_cantante">cuerto en la lista de cantantes</string>
+    <string name="dimitri_cantante">quinto en la lista de cantantes</string>
+    <string name="gyorgi_cantante">sexto en la lista de cantantes</string>
+    <string name="jean_nombre">Jean Sibelius</string>
+    <string name="leos_nombre">Leos Janacek</string>
+    <string name="anna_nombre">Anna Porvaldsdottir</string>
+    <string name="frederic_nombre">Frederic Chopin</string>
+    <string name="dmitri_nombre">Dmitri Shostakovich</string>
+    <string name="gyorgy_nombre">Gyorgy Ligeti</string>
+    <string name="poco">1–2 hours</string>
+    <string name="medio">3–4 hours</string>
+    <string name="mucho">5 or more</string>
+    <string name="subtitulo_daily_use">DAILY USE</string>
+    <string name="boton_next">NEXT</string>
+    <string name="titulo_formulario">Which of these options best describes you?</string>
+    <string name="form_opc1">I´m new to classical</string>
+    <string name="form_opc2">I have a basic knowledge of classical</string>
+    <string name="form_opc3">I´m an experienced listener</string>
+    <string name="email_address">Email address</string>
+    <string name="email_hint">Email</string>
+    <string name="text_clave">Choose a password</string>
+    <string name="hint_clave">Password</string>
+
+</resources>

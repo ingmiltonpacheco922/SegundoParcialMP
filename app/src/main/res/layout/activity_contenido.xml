@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Contenido">
+
+    <TextView
+        android:id="@+id/titulo_contenido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/titulo_contenido"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subtitulo_contenido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/subtitulo_contenido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_contenido" />
+
+
+    <ImageView
+        android:id="@+id/imagen_jean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="28dp"
+        android:onClick="showJeanSelect"
+        app:layout_constraintEnd_toStartOf="@+id/imagen_leos"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtitulo_contenido"
+        app:srcCompat="@drawable/jean_1"
+        android:contentDescription="@string/jean_cantante" />
+
+    <ImageView
+        android:id="@+id/imagen_leos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:onClick="showLeosSelect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imagen_jean"
+        app:layout_constraintTop_toTopOf="@+id/imagen_jean"
+        app:srcCompat="@drawable/leos_2"
+        android:contentDescription="@string/leos_cantante" />
+
+    <ImageView
+        android:id="@+id/imagen_anna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="showAnnaSelect"
+        app:layout_constraintEnd_toEndOf="@+id/imagen_jean"
+        app:layout_constraintStart_toStartOf="@+id/imagen_jean"
+        app:layout_constraintTop_toBottomOf="@+id/text_jean"
+        app:srcCompat="@drawable/anna_3"
+        android:contentDescription="@string/anna_cantante" />
+
+    <ImageView
+        android:id="@+id/imagen_fred"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="showFredericSelect"
+        app:layout_constraintEnd_toEndOf="@+id/imagen_leos"
+        app:layout_constraintStart_toStartOf="@+id/imagen_leos"
+        app:layout_constraintTop_toTopOf="@+id/imagen_anna"
+        app:srcCompat="@drawable/frederic_4"
+        android:contentDescription="@string/fred_cantante" />
+
+    <ImageView
+        android:id="@+id/imagen_dimitri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="showDmitriSelect"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/imagen_anna"
+        app:layout_constraintStart_toStartOf="@+id/imagen_anna"
+        app:layout_constraintTop_toBottomOf="@+id/text_anna"
+        app:srcCompat="@drawable/dimitric_5"
+        android:contentDescription="@string/dimitri_cantante" />
+
+    <ImageView
+        android:id="@+id/imagen_gyorgi"
+        android:onClick="showGyorgySelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/imagen_fred"
+        app:layout_constraintStart_toStartOf="@+id/imagen_fred"
+        app:layout_constraintTop_toTopOf="@+id/imagen_dimitri"
+        app:srcCompat="@drawable/gyorgi_6"
+        android:contentDescription="@string/gyorgi_cantante" />
+
+    <TextView
+        android:id="@+id/text_jean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/jean_nombre"
+        app:layout_constraintEnd_toEndOf="@+id/imagen_jean"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/imagen_jean"
+        app:layout_constraintTop_toBottomOf="@+id/imagen_jean" />
+
+    <TextView
+        android:id="@+id/text_leos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+
+        android:text="@string/leos_nombre"
+        app:layout_constraintEnd_toEndOf="@+id/imagen_leos"
+        app:layout_constraintStart_toStartOf="@+id/imagen_leos"
+        app:layout_constraintTop_toBottomOf="@+id/imagen_leos" />
+
+    <TextView
+        android:id="@+id/text_anna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/anna_nombre"
+        app:layout_constraintEnd_toEndOf="@+id/imagen_anna"
+        app:layout_constraintStart_toStartOf="@+id/imagen_anna"
+        app:layout_constraintTop_toBottomOf="@+id/imagen_anna" />
+
+    <TextView
+        android:id="@+id/text_federic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/frederic_nombre"
+        app:layout_constraintEnd_toEndOf="@+id/imagen_fred"
+        app:layout_constraintStart_toStartOf="@+id/imagen_fred"
+        app:layout_constraintTop_toBottomOf="@+id/imagen_fred" />
+
+    <TextView
+        android:id="@+id/text_dimitri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/dmitri_nombre"
+        app:layout_constraintEnd_toEndOf="@+id/imagen_dimitri"
+        app:layout_constraintStart_toStartOf="@+id/imagen_dimitri"
+        app:layout_constraintTop_toBottomOf="@+id/imagen_dimitri" />
+
+    <TextView
+        android:id="@+id/text_gyorgy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:text="@string/gyorgy_nombre"
+        app:layout_constraintEnd_toEndOf="@+id/imagen_gyorgi"
+        app:layout_constraintStart_toStartOf="@+id/imagen_gyorgi"
+        app:layout_constraintTop_toBottomOf="@+id/imagen_gyorgi" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
